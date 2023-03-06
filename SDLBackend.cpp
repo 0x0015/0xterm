@@ -52,6 +52,7 @@ bool SDLBackend::open(){
 
 	//SDL_StartTextInput();
 	SDL_EnableUNICODE(1);
+	SDL_ShowCursor(0);//optional, but on embedded systems looks better
 
 	SDL_Flip(window_surface);
 
